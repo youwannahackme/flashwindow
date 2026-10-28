@@ -156,25 +156,6 @@ python experiments/verify_analytical_math.py
 python experiments/reproduce_all_metrics.py
 ```
 
-### 3.4 Compile Manuscript and Export PDF
-```bash
-# Compiles FLASHWINDOW_ACM_TOPS_Revised.docx and exports FLASHWINDOW_ACM_TOPS_Revised.pdf
-python build_flashwindow_docx.py
-```
-
-### 3.5 Run the 35-Rule ACM Master Verification Checklist
-```bash
-python verify_flashwindow_checklist.py FLASHWINDOW_ACM_TOPS_Revised.docx
-```
-*Expected Output:*
-```
-=================================================================
-  FINAL STATUS: ALL REQUIREMENTS MET (100% ACM COMPLIANT)
-=================================================================
-```
-
----
-
 ## 4. Summary of Validated Empirical Findings
 
 | Evaluation Dimension | Stated Claim in Paper | Empirical Evidence Source | Verified Confidence Bound (95% Wilson Score CI) |
