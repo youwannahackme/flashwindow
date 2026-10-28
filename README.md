@@ -39,13 +39,7 @@ FLASH_WINDOW/
 │
 ├── FLASHWINDOW_ACM_TOPS_Revised.docx          # Primary Revised ACM Word Manuscript
 ├── FLASHWINDOW_ACM_TOPS_Revised.pdf           # Primary Revised ACM PDF Manuscript
-├── FlashWindow_ACM_TOPS_Submission.docx       # Synchronized ACM Word Submission
-├── FlashWindow_ACM_TOPS_Submission.pdf        # Synchronized ACM PDF Submission
 ├── FlashWindow_Research_Paper.md              # Synchronized Markdown Manuscript
-│
-├── build_flashwindow_docx.py                  # End-to-end manuscript compiler and PDF exporter
-├── verify_flashwindow_checklist.py            # Automated ACM TOPS 35-rule verification suite
-├── generate_flashwindow_figures.py            # High-resolution figure generator
 │
 ├── reports/                                   # Formal ACM TOPS Audit Reports (Phases 1-15)
 │   ├── initial_audit.md                       # Phase 1: Manuscript Discovery & Defect Audit
