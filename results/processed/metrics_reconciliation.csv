@@ -1,0 +1,22 @@
+Experiment_Type,Condition_or_Config,Trials,TP,FP,TN,FN,Metric_Name,Value,CI_95_Low,CI_95_High
+Controlled_Campaign,Dwell_W_30s,100,92,0,0,8,Recall,0.92,0.8500190990956066,0.9589064840833618
+Controlled_Campaign,Dwell_W_60s,100,100,0,0,0,Recall,1.0,0.9630066466416288,0.9999999999999999
+Controlled_Campaign,Dwell_W_180s,100,100,0,0,0,Recall,1.0,0.9630066466416288,0.9999999999999999
+Controlled_Campaign,Dwell_W_420s,100,100,0,0,0,Recall,1.0,0.9630066466416288,0.9999999999999999
+Controlled_Campaign,Dwell_W_900s,100,100,0,0,0,Recall,1.0,0.9630066466416288,0.9999999999999999
+Ablation_Study,Full System (FLASHWINDOW),100,,,,,Recall,1.0,0.9542,1.0
+Ablation_Study,Full System (FLASHWINDOW),100,,,,,FPR,0.0,0.0,0.1611
+Ablation_Study,No Lightweight Prober (Periodic 5m Polling),100,,,,,Recall,0.4,0.2996,0.5095
+Ablation_Study,No Lightweight Prober (Periodic 5m Polling),100,,,,,FPR,0.0,0.0,0.1611
+Ablation_Study,No Multi-Vantage Verification,100,,,,,Recall,0.8375,0.7416,0.9025
+Ablation_Study,No Multi-Vantage Verification,100,,,,,FPR,0.0,0.0,0.1611
+Ablation_Study,No Deterministic Invariants,100,,,,,Recall,0.4,0.2996,0.5095
+Ablation_Study,No Deterministic Invariants,100,,,,,FPR,0.0,0.0,0.1611
+Ablation_Study,No Adaptive Scheduling (Static 60s Polling),100,,,,,Recall,0.9,0.8149,0.9485
+Ablation_Study,No Adaptive Scheduling (Static 60s Polling),100,,,,,FPR,0.0,0.0,0.1611
+Ablation_Study,No Bounded AI Assistance,100,,,,,Recall,1.0,0.9542,1.0
+Ablation_Study,No Bounded AI Assistance,100,,,,,FPR,0.0,0.0,0.1611
+Kaggle_Benchmark,Suite 1: Supply Chain Risk Graph,274,220,0,54,0,Recall,1.0,0.9828385523848673,1.0
+Kaggle_Benchmark,Suite 2: Fast-Flux DNS Telemetry,100,30,0,70,0,Recall,1.0,0.8864870159728182,1.0
+Kaggle_Benchmark,Suite 3: OSS Vulnerabilities & CWE-494 Update Flaws (Proxy Invariant Test),300,83,0,217,0,Recall,1.0,0.9557648622595759,1.0
+Kaggle_Benchmark,Suite 4: Real LOTL APT Payloads (Proxy Invariant Test),701,501,0,200,0,Recall,1.0,0.9923907926868317,0.9999999999999999

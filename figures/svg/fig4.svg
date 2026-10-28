@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 410" width="900" height="410">
+
+<defs>
+
+  <style>
+
+    .title { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #0F172A; }
+
+    .subtitle { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-style: italic; fill: #475569; }
+
+    .box-title { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #1E293B; }
+
+    .box-sub { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10px; fill: #475569; }
+
+    .box-code { font-family: 'Courier New', monospace; font-size: 9.5px; fill: #0F172A; }
+
+    .tag { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9px; font-weight: bold; }
+
+    .label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10.5px; fill: #334155; }
+
+    .edge-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9.5px; fill: #1E40AF; font-weight: 500; }
+
+  </style>
+
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563EB" />
+
+  </marker>
+
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#DC2626" />
+
+  </marker>
+
+  <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#16A34A" />
+
+  </marker>
+
+  <marker id="arrow-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748B" />
+
+  </marker>
+
+</defs>
+
+<rect width="100%" height="100%" fill="#FFFFFF" />
+
+
+
+    <!-- Compromised Server / CDN -->
+
+    <rect x="360" y="40" width="200" height="90" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" />
+
+    <text x="375" y="65" font-family="Arial" font-size="11" font-weight="bold" fill="#991B1B">UPDATE SERVER / CDN</text>
+
+    <text x="375" y="85" class="box-sub">Compromised Routing Policy</text>
+
+    <text x="375" y="102" class="box-code" fill="#B91C1C">Geo/ASN Selective Injection</text>
+
+
+
+    <!-- Vantage 1: North America -->
+
+    <rect x="60" y="190" width="220" height="140" rx="6" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.8" />
+
+    <text x="75" y="215" font-family="Arial" font-size="11" font-weight="bold" fill="#166534">Vantage V_1 (US-East / AS15169)</text>
+
+    <text x="75" y="238" class="box-sub">- Observes Canonical Digest:</text>
+
+    <text x="75" y="256" class="box-code" fill="#15803D">H_legit = 0x8a3f...d10e</text>
+
+    <text x="75" y="276" class="box-sub">- HTTP 200 (Clean Binary)</text>
+
+    <text x="75" y="296" class="box-sub">- Invariant Status: CLEAN</text>
+
+
+
+    <!-- Vantage 2: Targeted Region -->
+
+    <rect x="350" y="190" width="220" height="140" rx="6" fill="#FEF2F2" stroke="#DC2626" stroke-width="2" />
+
+    <text x="365" y="215" font-family="Arial" font-size="11" font-weight="bold" fill="#991B1B">Vantage V_2 (AP-East / AS4134)</text>
+
+    <text x="365" y="238" class="box-sub">- Observes Altered Digest:</text>
+
+    <text x="365" y="256" class="box-code" fill="#DC2626">H_tamper = 0x4f1b...c98a</text>
+
+    <text x="365" y="276" class="box-sub">- Covert Downloader Payload</text>
+
+    <text x="365" y="296" class="box-sub" font-weight="bold" fill="#B91C1C">- ALERT: INV-05 SPLIT-VIEW</text>
+
+
+
+    <!-- Vantage 3: Europe -->
+
+    <rect x="625" y="190" width="225" height="140" rx="6" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.8" />
+
+    <text x="638" y="215" font-family="Arial" font-size="10.5" font-weight="bold" fill="#166534">Vantage V_3 (EU-Central / AS3320)</text>
+
+    <text x="645" y="238" class="box-sub">- Observes Canonical Digest:</text>
+
+    <text x="645" y="256" class="box-code" fill="#15803D">H_legit = 0x8a3f...d10e</text>
+
+    <text x="645" y="276" class="box-sub">- HTTP 200 (Clean Binary)</text>
+
+    <text x="645" y="296" class="box-sub">- Invariant Status: CLEAN</text>
+
+
+
+    <!-- Directed Flow Arrows -->
+
+    <path d="M 410 130 L 170 190" stroke="#16A34A" stroke-width="2" marker-end="url(#arrow-green)" />
+
+    <text x="240" y="145" class="edge-label" fill="#15803D">Legitimate Response</text>
+
+
+
+    <path d="M 460 130 L 460 190" stroke="#DC2626" stroke-width="2.5" marker-end="url(#arrow-red)" />
+
+    <text x="470" y="155" class="edge-label" fill="#DC2626">Tampered Payload</text>
+
+
+
+    <path d="M 510 130 L 740 190" stroke="#16A34A" stroke-width="2" marker-end="url(#arrow-green)" />
+
+    <text x="620" y="145" class="edge-label" fill="#15803D">Legitimate Response</text>
+
+
+
+    <!-- Bottom Consensus Bar -->
+
+    <rect x="60" y="350" width="790" height="42" rx="4" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5" />
+
+    <text x="75" y="375" font-family="Arial" font-size="10.5" font-weight="bold" fill="#1E40AF">CONSENSUS ARBITRATION:</text>
+
+    <text x="250" y="375" class="box-sub">Consensus |V_match|/|V| = 2/3 (66.7%). Divergence Flagged within 1.4s. Local Evidence Locked.</text>
+
+    </svg>

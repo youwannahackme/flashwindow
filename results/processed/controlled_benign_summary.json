@@ -1,0 +1,11 @@
+{
+  "total_trials": 2000,
+  "true_negatives": 1993,
+  "false_positives": 7,
+  "false_positive_rate": 0.0035,
+  "false_positive_rate_ci": [
+    0.0016964340924555759,
+    0.007207186132652739
+  ],
+  "mean_latency_ms": 3.62
+}

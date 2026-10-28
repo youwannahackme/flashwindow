@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380">
+
+<defs>
+
+  <style>
+
+    .title { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #0F172A; }
+
+    .subtitle { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-style: italic; fill: #475569; }
+
+    .box-title { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #1E293B; }
+
+    .box-sub { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10px; fill: #475569; }
+
+    .box-code { font-family: 'Courier New', monospace; font-size: 9.5px; fill: #0F172A; }
+
+    .tag { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9px; font-weight: bold; }
+
+    .label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10.5px; fill: #334155; }
+
+    .edge-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9.5px; fill: #1E40AF; font-weight: 500; }
+
+  </style>
+
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563EB" />
+
+  </marker>
+
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#DC2626" />
+
+  </marker>
+
+  <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#16A34A" />
+
+  </marker>
+
+  <marker id="arrow-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748B" />
+
+  </marker>
+
+</defs>
+
+<rect width="100%" height="100%" fill="#FFFFFF" />
+
+
+
+    <!-- Clip paths for card header banners -->
+
+    <clipPath id="card-hdr-clip-1">
+
+      <rect x="40" y="50" width="160" height="150" rx="6" />
+
+    </clipPath>
+
+    <clipPath id="card-hdr-clip-2">
+
+      <rect x="250" y="50" width="170" height="150" rx="6" />
+
+    </clipPath>
+
+    <clipPath id="card-hdr-clip-3">
+
+      <rect x="470" y="50" width="160" height="150" rx="6" />
+
+    </clipPath>
+
+    <clipPath id="card-hdr-clip-chk">
+
+      <rect x="180" y="250" width="310" height="105" rx="6" />
+
+    </clipPath>
+
+    <clipPath id="card-hdr-clip-wit">
+
+      <rect x="630" y="230" width="240" height="130" rx="6" />
+
+    </clipPath>
+
+
+
+    <!-- Card 1: Block B_{i-1} -->
+
+    <rect x="40" y="50" width="160" height="150" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5" />
+
+    <g clip-path="url(#card-hdr-clip-1)">
+
+      <rect x="40" y="50" width="160" height="30" fill="#F1F5F9" />
+
+      <line x1="40" y1="80" x2="200" y2="80" stroke="#CBD5E1" stroke-width="1" />
+
+    </g>
+
+    <text x="52" y="70" class="box-title" fill="#0F172A">Block B_{i-1}</text>
+
+    <text x="52" y="98" class="box-sub">Index: 1,041</text>
+
+    <text x="52" y="115" class="box-sub">Time: 14:02:10 UTC</text>
+
+    <text x="52" y="132" class="box-sub">Digest: H(M_clean)</text>
+
+    <text x="52" y="150" class="box-code" fill="#0F172A">h_{i-1} = 0x7c...2a</text>
+
+    <line x1="45" y1="162" x2="195" y2="162" stroke="#E2E8F0" stroke-width="1" />
+
+    <text x="52" y="179" class="box-code" fill="#64748B">PrevHash: 0x11...ef</text>
+
+
+
+    <!-- Arrow 1 to 2 -->
+
+    <path d="M 200 125 L 250 125" stroke="#2563EB" stroke-width="2" marker-end="url(#arrow)" />
+
+
+
+    <!-- Card 2: Block B_i (ALERT) -->
+
+    <rect x="250" y="50" width="170" height="150" rx="6" fill="#FFFFFF" stroke="#DC2626" stroke-width="2" />
+
+    <g clip-path="url(#card-hdr-clip-2)">
+
+      <rect x="250" y="50" width="170" height="30" fill="#FEE2E2" />
+
+      <line x1="250" y1="80" x2="420" y2="80" stroke="#FCA5A5" stroke-width="1" />
+
+    </g>
+
+    <text x="262" y="70" class="box-title" fill="#B91C1C">Block B_i (ALERT)</text>
+
+    <text x="262" y="98" class="box-sub">Index: 1,042</text>
+
+    <text x="262" y="115" class="box-sub">Time: 14:04:32 UTC</text>
+
+    <text x="262" y="132" class="box-sub" font-weight="bold" fill="#DC2626">INV-01 VIOLATION</text>
+
+    <text x="262" y="150" class="box-code" fill="#DC2626">h_i = H(h_{i-1} || r_i)</text>
+
+    <line x1="255" y1="162" x2="415" y2="162" stroke="#FECACA" stroke-width="1" />
+
+    <text x="262" y="179" class="box-code" fill="#B91C1C">PrevHash: 0x7c...2a</text>
+
+
+
+    <!-- Arrow 2 to 3 -->
+
+    <path d="M 420 125 L 470 125" stroke="#2563EB" stroke-width="2" marker-end="url(#arrow)" />
+
+
+
+    <!-- Card 3: Block B_{i+1} -->
+
+    <rect x="470" y="50" width="160" height="150" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5" />
+
+    <g clip-path="url(#card-hdr-clip-3)">
+
+      <rect x="470" y="50" width="160" height="30" fill="#F1F5F9" />
+
+      <line x1="470" y1="80" x2="630" y2="80" stroke="#CBD5E1" stroke-width="1" />
+
+    </g>
+
+    <text x="482" y="70" class="box-title" fill="#0F172A">Block B_{i+1}</text>
+
+    <text x="482" y="98" class="box-sub">Index: 1,043</text>
+
+    <text x="482" y="115" class="box-sub">Time: 14:06:45 UTC</text>
+
+    <text x="482" y="132" class="box-sub">Digest: H(M_clean)</text>
+
+    <text x="482" y="150" class="box-code" fill="#0F172A">h_{i+1} = 0x9e...4b</text>
+
+    <line x1="475" y1="162" x2="625" y2="162" stroke="#E2E8F0" stroke-width="1" />
+
+    <text x="482" y="179" class="box-code" fill="#64748B">PrevHash: h_i</text>
+
+
+
+    <!-- Downward Merkle Root computation -->
+
+    <path d="M 335 200 L 335 250" stroke="#059669" stroke-width="2.5" marker-end="url(#arrow-green)" />
+
+    <text x="345" y="230" class="edge-label" fill="#059669">Checkpoint Root</text>
+
+
+
+    <!-- Merkle Checkpoint Box -->
+
+    <rect x="180" y="250" width="310" height="105" rx="6" fill="#FFFFFF" stroke="#10B981" stroke-width="1.8" />
+
+    <g clip-path="url(#card-hdr-clip-chk)">
+
+      <rect x="180" y="250" width="310" height="28" fill="#ECFDF5" />
+
+      <line x1="180" y1="278" x2="490" y2="278" stroke="#A7F3D0" stroke-width="1" />
+
+    </g>
+
+    <text x="195" y="269" class="box-title" fill="#065F46">Epoch Checkpoint Root R_t</text>
+
+    <text x="195" y="296" class="box-sub">- Sequence Range: [1,000 ... 1,050]</text>
+
+    <text x="195" y="315" class="box-code" fill="#047857">R_t = MerkleTree({h_1000 ... h_1050})</text>
+
+    <text x="195" y="335" class="box-sub">- Non-repudiable state commitment</text>
+
+
+
+    <!-- Arrow to External Witness -->
+
+    <path d="M 490 300 L 630 300" stroke="#059669" stroke-width="2.5" marker-end="url(#arrow-green)" />
+
+    <text x="515" y="290" class="edge-label" fill="#059669">Submit Root</text>
+
+
+
+    <!-- Checkpoint Witness Box -->
+
+    <rect x="630" y="230" width="240" height="130" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.8" />
+
+    <g clip-path="url(#card-hdr-clip-wit)">
+
+      <rect x="630" y="230" width="240" height="28" fill="#EFF6FF" />
+
+      <line x1="630" y1="258" x2="870" y2="258" stroke="#BFDBFE" stroke-width="1" />
+
+    </g>
+
+    <text x="645" y="249" class="box-title" fill="#1E40AF">Checkpoint Witness Service</text>
+
+    <text x="645" y="278" class="box-sub">- Local HMAC-SHA256 Witnessing</text>
+
+    <text x="645" y="296" class="box-sub">- Keyed Merkle Epoch Checkpoint</text>
+
+    <text x="645" y="317" class="box-code" fill="#1D4ED8">Receipt: HMAC(R_t || Time, K_w)</text>
+
+    <text x="645" y="337" class="box-sub">- Keyed Tamper Evidence</text>
+
+    </svg>

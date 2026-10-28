@@ -1,0 +1,17 @@
+{
+  "total_trials": 1375,
+  "true_positives": 834,
+  "false_negatives": 0,
+  "false_positives": 0,
+  "true_negatives": 541,
+  "aggregate_recall": 1.0,
+  "aggregate_recall_ci": [
+    0.9954150713923616,
+    0.9999999999999999
+  ],
+  "aggregate_fpr": 0.0,
+  "aggregate_fpr_ci": [
+    0.0,
+    0.007050570857875443
+  ]
+}

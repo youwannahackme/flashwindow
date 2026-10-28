@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 560" width="940" height="560">
+
+<defs>
+
+  <style>
+
+    .title { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #0F172A; }
+
+    .subtitle { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-style: italic; fill: #475569; }
+
+    .box-title { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #1E293B; }
+
+    .box-sub { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10px; fill: #475569; }
+
+    .box-code { font-family: 'Courier New', monospace; font-size: 9.5px; fill: #0F172A; }
+
+    .tag { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9px; font-weight: bold; }
+
+    .label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10.5px; fill: #334155; }
+
+    .edge-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9.5px; fill: #1E40AF; font-weight: 500; }
+
+  </style>
+
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563EB" />
+
+  </marker>
+
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#DC2626" />
+
+  </marker>
+
+  <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#16A34A" />
+
+  </marker>
+
+  <marker id="arrow-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748B" />
+
+  </marker>
+
+</defs>
+
+<rect width="100%" height="100%" fill="#FFFFFF" />
+
+
+    <rect x="30" y="50" width="250" height="210" rx="6" fill="#F8FAFC" stroke="#0284C7" stroke-width="1.8" />
+    <rect x="30" y="50" width="250" height="28" rx="6" fill="#0284C7" />
+    <text x="40" y="69" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF">LAYER 1: HYBRID MULTI-SIGNAL PROBER</text>
+    <text x="42" y="98" class="box-title">Multi-Signal Prober &amp; Scheduler</text>
+    <text x="42" y="116" class="box-sub">- Tier-1 Micro-Probes (HTTP HEAD/ETag)</text>
+    <text x="42" y="132" class="box-sub">- DNS CNAME/A Resolution Monitors</text>
+    <text x="42" y="148" class="box-sub">- TLS Fingerprint &amp; SAN Trackers</text>
+    <text x="42" y="164" class="box-sub">- Poisson Scheduled Background Check</text>
+    <rect x="42" y="180" width="226" height="52" rx="4" fill="#E0F2FE" stroke="#38BDF8" stroke-width="1" />
+    <text x="50" y="198" class="box-code">Rate: λ_l (lightweight), λ_b (full)</text>
+    <text x="50" y="216" class="box-code">Signal Change Trigger -> Snapshot</text>
+    
+    <rect x="345" y="50" width="265" height="210" rx="6" fill="#F8FAFC" stroke="#2563EB" stroke-width="1.8" />
+    <rect x="345" y="50" width="265" height="28" rx="6" fill="#2563EB" />
+    <text x="355" y="69" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF">LAYER 2: TEMPORAL STATE MACHINE</text>
+    <text x="357" y="98" class="box-title">State Machine &amp; Multi-Vantage</text>
+    <text x="357" y="116" class="box-sub">- Canonical Manifest Normalizer</text>
+    <text x="357" y="132" class="box-sub">- State Transition Graph (S_t -> S_t+1)</text>
+    <text x="357" y="148" class="box-sub">- Split-View Cross-Vantage Divergence</text>
+    <text x="357" y="164" class="box-sub">- d_Hamming and ASN Vantage Matrix</text>
+    <rect x="357" y="180" width="242" height="52" rx="4" fill="#DBEAFE" stroke="#60A5FA" stroke-width="1" />
+    <text x="365" y="198" class="box-code">Canonical Digest: H(C(M))</text>
+    <text x="365" y="216" class="box-code">Vantage Consensus: |V_match| / |V|</text>
+    
+    <rect x="660" y="50" width="250" height="210" rx="6" fill="#F8FAFC" stroke="#059669" stroke-width="1.8" />
+    <rect x="660" y="50" width="250" height="28" rx="6" fill="#059669" />
+    <text x="670" y="69" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF">LAYER 3: DETERMINISTIC INVARIANTS</text>
+    <text x="672" y="96" class="box-title">Rule Enforcement Engine</text>
+    <text x="672" y="112" class="box-sub">- INV-01: Unauthorized Origin</text>
+    <text x="672" y="126" class="box-sub">- INV-02: Content-Hash Mismatch</text>
+    <text x="672" y="140" class="box-sub">- INV-03: Security Downgrade</text>
+    <text x="672" y="154" class="box-sub">- INV-04: Transient Regression (A->B->A)</text>
+    <text x="672" y="168" class="box-sub">- INV-05: Multi-Vantage Divergence</text>
+    <rect x="672" y="180" width="226" height="52" rx="4" fill="#D1FAE5" stroke="#34D399" stroke-width="1" />
+    <text x="680" y="198" class="box-code">Strict Hard Alert: Zero AI Delay</text>
+    <text x="680" y="216" class="box-code">Immediate Checkpoint Escalation</text>
+    
+    <rect x="30" y="290" width="580" height="230" rx="6" fill="#F8FAFC" stroke="#475569" stroke-width="1.8" />
+    <rect x="30" y="290" width="580" height="28" rx="6" fill="#475569" />
+    <text x="40" y="309" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF">LAYER 4: CRYPTOGRAPHIC EVIDENCE LEDGER &amp; EXTERNAL WITNESS ANCHORING</text>
+    
+    <!-- Sub-box Hash chain -->
+    <rect x="45" y="330" width="260" height="170" rx="4" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.2" />
+    <text x="55" y="350" class="box-title">Hash-Chained Observation Ledger</text>
+    <text x="55" y="370" class="box-sub">- Raw Response Payloads &amp; Headers</text>
+    <text x="55" y="388" class="box-sub">- Sequence Hash: h_i = H(h_{i-1} || r_i)</text>
+    <text x="55" y="406" class="box-sub">- Merkle Tree State Root Generation</text>
+    <text x="55" y="424" class="box-sub">- Immutable Append-Only Storage</text>
+    <text x="55" y="442" class="box-sub">- Tamper Evident Verification Proof</text>
+    <text x="55" y="470" class="box-code">Proof: π_i = {sibling hashes}</text>
+
+    <!-- Sub-box Witness -->
+    <rect x="330" y="330" width="265" height="170" rx="4" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.2" />
+    <text x="340" y="350" class="box-title">Checkpoint Witness Service</text>
+    <text x="340" y="370" class="box-sub">- Keyed HMAC-SHA256 Witnessing</text>
+    <text x="340" y="388" class="box-sub">- Keyed Merkle Epoch Checkpoints</text>
+    <text x="340" y="406" class="box-sub">- Receipt: HMAC(R_t || Time, K_w)</text>
+    <text x="340" y="424" class="box-sub">- Keyed Tamper-Evident Receipts</text>
+    <text x="340" y="442" class="box-sub">- Optional: RFC 3161 / Rekor Anchor</text>
+    <text x="340" y="470" class="box-code">Anchor: Witness(Root_t, Seq_Range)</text>
+    
+    <rect x="660" y="290" width="250" height="230" rx="6" fill="#FFFBEB" stroke="#D97706" stroke-width="1.8" />
+    <rect x="660" y="290" width="250" height="28" rx="6" fill="#D97706" />
+    <text x="670" y="309" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF">BOUNDED AI ASSISTANCE PLANE</text>
+    <text x="672" y="335" class="box-title">Strictly Bounded Analyst Aid</text>
+    <text x="672" y="353" class="box-sub">- Secondary Anomaly Risk Ranking</text>
+    <text x="672" y="369" class="box-sub">- Bounded Contextual-Bandit Scheduler</text>
+    <text x="672" y="385" class="box-sub">- Evidence-Grounded Report Drafting</text>
+    <text x="672" y="401" class="box-sub">- Zero Alert Suppression Guardrail</text>
+    <text x="672" y="417" class="box-sub">- Invariant Override Strictly Forbidden</text>
+    
+    <rect x="672" y="435" width="226" height="70" rx="4" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1" />
+    <text x="680" y="455" font-family="Arial" font-size="9" font-weight="bold" fill="#92400E">SAFETY BOUNDARY GUARANTEE:</text>
+    <text x="680" y="471" font-family="Arial" font-size="8.5" fill="#78350F">No authority to modify trust policy.</text>
+    <text x="680" y="485" font-family="Arial" font-size="8.5" fill="#78350F">No authority to discard observations.</text>
+    
+    <!-- Layer 1 to Layer 2 (Gap 280 to 345: 65px width; Snapshot centered at 312) -->
+    <path d="M 280 150 L 345 150" fill="none" stroke="#2563EB" stroke-width="2" marker-end="url(#arrow)" />
+    <text x="312" y="142" font-family="Arial" font-size="8.5" font-weight="bold" fill="#1E40AF" text-anchor="middle">Snapshot</text>
+
+    <!-- Layer 2 to Layer 3 (Gap 610 to 660: 50px width; State Delta centered at 635) -->
+    <path d="M 610 150 L 660 150" fill="none" stroke="#2563EB" stroke-width="2" marker-end="url(#arrow)" />
+    <text x="635" y="142" font-family="Arial" font-size="8.5" font-weight="bold" fill="#1E40AF" text-anchor="middle">State Δ</text>
+
+    <!-- Layer 2 & 3 down to Layer 4 -->
+    <path d="M 475 260 L 475 290" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow-slate)" />
+    <path d="M 785 260 L 785 275 L 590 275 L 590 290" fill="none" stroke="#059669" stroke-width="2" marker-end="url(#arrow-green)" />
+
+    <!-- Layer 3 to Bounded AI Plane -->
+    <path d="M 785 260 L 785 290" fill="none" stroke="#D97706" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow)" />
+    <text x="792" y="278" font-family="Arial" font-size="8.5" fill="#D97706">Triage Only</text>
+    </svg>

@@ -1,0 +1,115 @@
+{
+  "total_trials": 1375,
+  "aggregate_recall": 1.0,
+  "aggregate_recall_ci": [
+    0.9954150713923616,
+    0.9999999999999999
+  ],
+  "aggregate_fpr": 0.0,
+  "aggregate_fpr_ci": [
+    0.0,
+    0.007050570857875443
+  ],
+  "aggregate_precision": 1.0,
+  "aggregate_f1": 1.0,
+  "p50_latency_ms": 0.452,
+  "p95_latency_ms": 1.336,
+  "p99_latency_ms": 2.682,
+  "mean_latency_ms": 0.617,
+  "std_latency_ms": 0.792,
+  "latency_protocol": {
+    "environment": {
+      "platform": "Windows-10-10.0.19045-SP0",
+      "python_version": "3.11.3",
+      "processor": "Intel64 Family 6 Model 142 Stepping 9, GenuineIntel"
+    },
+    "warmup_cycles": 100,
+    "measured_samples": 1375
+  },
+  "ledger_records": 1375,
+  "witness_receipts": 815,
+  "suites": [
+    {
+      "name": "Suite 1: Supply Chain Risk Graph & Package Integrity",
+      "trials": 274,
+      "tp": 220,
+      "fp": 0,
+      "tn": 54,
+      "fn": 0,
+      "recall": 1.0,
+      "recall_ci": [
+        0.9828385523848673,
+        1.0
+      ],
+      "fpr": 0.0,
+      "fpr_ci": [
+        6.938893903907228e-18,
+        0.06641333599182633
+      ],
+      "precision": 1.0,
+      "precision_ci": [
+        0.9828385523848673,
+        1.0
+      ],
+      "f1": 1.0
+    },
+    {
+      "name": "Suite 2: Real Fast-Flux DNS & Ephemeral Redirection",
+      "trials": 100,
+      "tp": 30,
+      "fp": 0,
+      "tn": 70,
+      "fn": 0,
+      "recall": 1.0,
+      "recall_ci": [
+        0.8864870159728182,
+        1.0
+      ],
+      "fpr": 0.0,
+      "fpr_ci": [
+        0.0,
+        0.05202286189223294
+      ],
+      "split_view_recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "name": "Suite 3: OSS Vulnerabilities & CWE-494 Update Flaws",
+      "trials": 300,
+      "tp": 83,
+      "fp": 0,
+      "tn": 217,
+      "fn": 0,
+      "recall": 1.0,
+      "recall_ci": [
+        0.9557648622595759,
+        1.0
+      ],
+      "fpr": 0.0,
+      "fpr_ci": [
+        0.0,
+        0.017394575700600063
+      ],
+      "f1": 1.0
+    },
+    {
+      "name": "Suite 4: Real LOTL APT Attack Payloads",
+      "trials": 701,
+      "tp": 501,
+      "fp": 0,
+      "tn": 200,
+      "fn": 0,
+      "recall": 1.0,
+      "recall_ci": [
+        0.9923907926868317,
+        0.9999999999999999
+      ],
+      "fpr": 0.0,
+      "fpr_ci": [
+        0.0,
+        0.018845251197524133
+      ],
+      "f1": 1.0
+    }
+  ]
+}

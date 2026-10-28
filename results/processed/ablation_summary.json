@@ -1,0 +1,134 @@
+{
+  "Full System (FLASHWINDOW)": {
+    "attack_trials": 80,
+    "benign_trials": 20,
+    "true_positives": 80,
+    "false_negatives": 0,
+    "false_positives": 0,
+    "true_negatives": 20,
+    "recall": 1.0,
+    "recall_ci": [
+      0.9542,
+      1.0
+    ],
+    "fpr": 0.0,
+    "fpr_ci": [
+      0.0,
+      0.1611
+    ],
+    "split_view_recall": 1.0,
+    "mean_latency_ms": 0.01,
+    "daily_bandwidth_mb": 1.84,
+    "description": "Optimal balance: complete 4-layer pipeline with multi-vantage and bandit"
+  },
+  "No Lightweight Prober (Periodic 5m Polling)": {
+    "attack_trials": 80,
+    "benign_trials": 20,
+    "true_positives": 32,
+    "false_negatives": 48,
+    "false_positives": 0,
+    "true_negatives": 20,
+    "recall": 0.4,
+    "recall_ci": [
+      0.2996,
+      0.5095
+    ],
+    "fpr": 0.0,
+    "fpr_ci": [
+      0.0,
+      0.1611
+    ],
+    "split_view_recall": 0.0,
+    "mean_latency_ms": 0.004,
+    "daily_bandwidth_mb": 57.6,
+    "description": "Severe bandwidth explosion (57.6 MB/day); vulnerable to sub-5m dwell attacks"
+  },
+  "No Multi-Vantage Verification": {
+    "attack_trials": 80,
+    "benign_trials": 20,
+    "true_positives": 67,
+    "false_negatives": 13,
+    "false_positives": 0,
+    "true_negatives": 20,
+    "recall": 0.8375,
+    "recall_ci": [
+      0.7416,
+      0.9025
+    ],
+    "fpr": 0.0,
+    "fpr_ci": [
+      0.0,
+      0.1611
+    ],
+    "split_view_recall": 0.0,
+    "mean_latency_ms": 0.016,
+    "daily_bandwidth_mb": 1.84,
+    "description": "Single vantage observation; completely blind to targeted split-view tampering"
+  },
+  "No Deterministic Invariants": {
+    "attack_trials": 80,
+    "benign_trials": 20,
+    "true_positives": 32,
+    "false_negatives": 48,
+    "false_positives": 0,
+    "true_negatives": 20,
+    "recall": 0.4,
+    "recall_ci": [
+      0.2996,
+      0.5095
+    ],
+    "fpr": 0.0,
+    "fpr_ci": [
+      0.0,
+      0.1611
+    ],
+    "split_view_recall": 1.0,
+    "mean_latency_ms": 0.006,
+    "daily_bandwidth_mb": 1.84,
+    "description": "Heuristic anomaly detection only; structural policy violations escape detection"
+  },
+  "No Adaptive Scheduling (Static 60s Polling)": {
+    "attack_trials": 80,
+    "benign_trials": 20,
+    "true_positives": 72,
+    "false_negatives": 8,
+    "false_positives": 0,
+    "true_negatives": 20,
+    "recall": 0.9,
+    "recall_ci": [
+      0.8149,
+      0.9485
+    ],
+    "fpr": 0.0,
+    "fpr_ci": [
+      0.0,
+      0.1611
+    ],
+    "split_view_recall": 1.0,
+    "mean_latency_ms": 0.016,
+    "daily_bandwidth_mb": 1.84,
+    "description": "Fixed 60s probe interval without bandit acceleration; higher miss rate at 30s dwell"
+  },
+  "No Bounded AI Assistance": {
+    "attack_trials": 80,
+    "benign_trials": 20,
+    "true_positives": 80,
+    "false_negatives": 0,
+    "false_positives": 0,
+    "true_negatives": 20,
+    "recall": 1.0,
+    "recall_ci": [
+      0.9542,
+      1.0
+    ],
+    "fpr": 0.0,
+    "fpr_ci": [
+      0.0,
+      0.1611
+    ],
+    "split_view_recall": 1.0,
+    "mean_latency_ms": 0.018,
+    "daily_bandwidth_mb": 1.84,
+    "description": "Static alert dispatch without priority ranking (unprioritized FIFO queue with modeled 25-33s analyst backlog delay)"
+  }
+}

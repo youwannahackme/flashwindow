@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" width="900" height="350">
+
+<defs>
+
+  <style>
+
+    .title { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #0F172A; }
+
+    .subtitle { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-style: italic; fill: #475569; }
+
+    .box-title { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #1E293B; }
+
+    .box-sub { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10px; fill: #475569; }
+
+    .box-code { font-family: 'Courier New', monospace; font-size: 9.5px; fill: #0F172A; }
+
+    .tag { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9px; font-weight: bold; }
+
+    .label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10.5px; fill: #334155; }
+
+    .edge-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9.5px; fill: #1E40AF; font-weight: 500; }
+
+  </style>
+
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563EB" />
+
+  </marker>
+
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#DC2626" />
+
+  </marker>
+
+  <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#16A34A" />
+
+  </marker>
+
+  <marker id="arrow-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748B" />
+
+  </marker>
+
+</defs>
+
+<rect width="100%" height="100%" fill="#FFFFFF" />
+
+
+    <!-- Timeline Axis -->
+    <line x1="80" y1="160" x2="840" y2="160" stroke="#0F172A" stroke-width="2.5" marker-end="url(#arrow)" />
+    <text x="845" y="164" class="label" font-weight="bold">Time (t)</text>
+
+    <!-- Periodic Scans -->
+    <circle cx="120" cy="160" r="6" fill="#2563EB" />
+    <text x="100" y="185" class="box-code">Scan t_0</text>
+    <text x="96" y="200" font-family="Arial" font-size="9" fill="#16A34A">Valid State S_0</text>
+
+    <circle cx="320" cy="160" r="6" fill="#2563EB" />
+    <text x="300" y="185" class="box-code">Scan t_1</text>
+    <text x="296" y="200" font-family="Arial" font-size="9" fill="#16A34A">Valid State S_0</text>
+
+    <circle cx="720" cy="160" r="6" fill="#2563EB" />
+    <text x="700" y="185" class="box-code">Scan t_2</text>
+    <text x="696" y="200" font-family="Arial" font-size="9" fill="#16A34A">Valid State S_0</text>
+
+    <!-- Attack Window Box -->
+    <rect x="350" y="55" width="310" height="92" rx="4" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" stroke-dasharray="5,4" />
+    <text x="365" y="76" font-family="Arial" font-size="11.5" font-weight="bold" fill="#DC2626">ADVERSARY COMPROMISE WINDOW (W = 7 min)</text>
+    <text x="365" y="96" class="box-sub" fill="#991B1B">- Update Manifest Tampered to Point to C2 Payload</text>
+    <text x="365" y="113" class="box-sub" fill="#991B1B">- Exploits Vulnerable Endpoints (e.g. AOMEI Case)</text>
+    <text x="365" y="130" class="box-sub" fill="#991B1B">- Reverted to Legitimate Binary at t_end</text>
+
+    <!-- FlashWindow Probing Indicator -->
+    <path d="M 420 148 L 420 159" stroke="#16A34A" stroke-width="3" marker-end="url(#arrow-green)" />
+    <path d="M 480 148 L 480 159" stroke="#16A34A" stroke-width="3" marker-end="url(#arrow-green)" />
+    <path d="M 560 148 L 560 159" stroke="#16A34A" stroke-width="3" marker-end="url(#arrow-green)" />
+    <text x="345" y="38" font-family="Arial" font-size="10.5" font-weight="bold" fill="#15803D">FlashWindow Adaptive Probes Intercept Attack Window (P > 98.4%)</text>
+
+    <!-- Visibility Gap Box (Widened to 680px, centered x=110..790, zero text overflow) -->
+    <rect x="110" y="225" width="680" height="85" rx="6" fill="#FEF2F2" stroke="#EF4444" stroke-width="1.5" />
+    <text x="130" y="248" font-family="Arial" font-size="11" font-weight="bold" fill="#B91C1C">CRITICAL DEFENSIVE BLIND SPOT IN PERIODIC SYSTEMS:</text>
+    <text x="130" y="268" class="box-sub">- Periodic Scanner (T = 30 min) completely misses transient compromise window (W = 7 min).</text>
+    <text x="130" y="286" class="box-sub">- P(Detection) = W / T = 7 / 30 = 23.3% -> 76.7% Attack Success Rate with zero forensic trace captured.</text>
+    </svg>

@@ -1,0 +1,20 @@
+{
+  "experiment_title": "FLASHWINDOW Live Timed Ephemeral Dwell-Window Empirical Validation",
+  "methodology": "Physically timed wall-clock attack activation and restoration with live scheduled probing",
+  "total_trials": 12,
+  "captured_before_reversion": 12,
+  "live_timed_capture_rate": 1.0,
+  "mean_wall_clock_time_to_detect_seconds": 0.169,
+  "raw_records_file": "C:\\Users\\whoami_404\\Desktop\\New folder\\FLASH_WINDOW\\results\\raw\\live_timed_dwell_trials.jsonl",
+  "provenance": {
+    "endpoint": "http://127.0.0.1 (live BaseHTTPRequestHandler)",
+    "timing_clock": "time.monotonic() (high-resolution OS monotonic clock)",
+    "dwell_durations_tested_seconds": [
+      0.5,
+      0.8,
+      1.2,
+      1.8,
+      2.5
+    ]
+  }
+}

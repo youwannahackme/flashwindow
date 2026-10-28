@@ -1,0 +1,56 @@
+{
+  "total_campaigns": 500,
+  "dwell_breakdown": {
+    "30": {
+      "trials": 100,
+      "recall_fixed_60s": 0.44,
+      "recall_fixed_30s": 1.0,
+      "recall_signal_only": 0.82,
+      "recall_full_10s": 1.0,
+      "recall_flashwindow": 0.92,
+      "mean_latency_ms": 5.973
+    },
+    "60": {
+      "trials": 100,
+      "recall_fixed_60s": 1.0,
+      "recall_fixed_30s": 1.0,
+      "recall_signal_only": 0.82,
+      "recall_full_10s": 1.0,
+      "recall_flashwindow": 1.0,
+      "mean_latency_ms": 7.068
+    },
+    "180": {
+      "trials": 100,
+      "recall_fixed_60s": 1.0,
+      "recall_fixed_30s": 1.0,
+      "recall_signal_only": 0.82,
+      "recall_full_10s": 1.0,
+      "recall_flashwindow": 1.0,
+      "mean_latency_ms": 7.188
+    },
+    "420": {
+      "trials": 100,
+      "recall_fixed_60s": 1.0,
+      "recall_fixed_30s": 1.0,
+      "recall_signal_only": 0.82,
+      "recall_full_10s": 1.0,
+      "recall_flashwindow": 1.0,
+      "mean_latency_ms": 6.054
+    },
+    "900": {
+      "trials": 100,
+      "recall_fixed_60s": 1.0,
+      "recall_fixed_30s": 1.0,
+      "recall_signal_only": 0.82,
+      "recall_full_10s": 1.0,
+      "recall_flashwindow": 1.0,
+      "mean_latency_ms": 8.306
+    }
+  },
+  "split_view_campaigns": 220,
+  "split_view_detected": 214,
+  "split_view_recall": 0.9727,
+  "overall_flashwindow_recall": 0.984,
+  "overall_true_positives": 492,
+  "ledger_verified": true
+}

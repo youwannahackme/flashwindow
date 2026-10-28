@@ -1,0 +1,385 @@
+{
+  "meta": {
+    "title": "FLASHWINDOW Authoritative Reconciled Metrics",
+    "eval_scale": {
+      "controlled_campaigns": 500,
+      "controlled_benign_controls": 2000,
+      "dedicated_split_view_campaigns": 100,
+      "ablation_trials": 600,
+      "proxy_benchmark_trials": 1375,
+      "primary_evaluations_excluding_ablations": 3975,
+      "total_evaluations_including_ablations": 4575
+    }
+  },
+  "controlled_experiments": {
+    "total_campaigns": 500,
+    "total_flashwindow_captures": 492,
+    "overall_recall": 0.984,
+    "overall_recall_ci": [
+      0.9687489320563318,
+      0.9918707361561123
+    ],
+    "split_view_campaigns": 220,
+    "split_view_detected": 214,
+    "split_view_recall": 0.9727272727272728,
+    "split_view_recall_ci": [
+      0.9417871835037539,
+      0.9874419932964842
+    ],
+    "dwell_breakdown": {
+      "30": {
+        "trials": 100,
+        "flashwindow_captures": 92,
+        "flashwindow_recall": 0.92,
+        "flashwindow_recall_ci": [
+          0.8500190990956066,
+          0.9589064840833618
+        ],
+        "fixed_60s_captures": 44,
+        "fixed_60s_recall": 0.44,
+        "fixed_30s_captures": 100,
+        "fixed_30s_recall": 1.0,
+        "signal_only_captures": 82,
+        "signal_only_recall": 0.82,
+        "full_10s_captures": 100,
+        "full_10s_recall": 1.0,
+        "mean_latency_ms": 5.973
+      },
+      "60": {
+        "trials": 100,
+        "flashwindow_captures": 100,
+        "flashwindow_recall": 1.0,
+        "flashwindow_recall_ci": [
+          0.9630066466416288,
+          0.9999999999999999
+        ],
+        "fixed_60s_captures": 100,
+        "fixed_60s_recall": 1.0,
+        "fixed_30s_captures": 100,
+        "fixed_30s_recall": 1.0,
+        "signal_only_captures": 82,
+        "signal_only_recall": 0.82,
+        "full_10s_captures": 100,
+        "full_10s_recall": 1.0,
+        "mean_latency_ms": 7.068
+      },
+      "180": {
+        "trials": 100,
+        "flashwindow_captures": 100,
+        "flashwindow_recall": 1.0,
+        "flashwindow_recall_ci": [
+          0.9630066466416288,
+          0.9999999999999999
+        ],
+        "fixed_60s_captures": 100,
+        "fixed_60s_recall": 1.0,
+        "fixed_30s_captures": 100,
+        "fixed_30s_recall": 1.0,
+        "signal_only_captures": 82,
+        "signal_only_recall": 0.82,
+        "full_10s_captures": 100,
+        "full_10s_recall": 1.0,
+        "mean_latency_ms": 7.188
+      },
+      "420": {
+        "trials": 100,
+        "flashwindow_captures": 100,
+        "flashwindow_recall": 1.0,
+        "flashwindow_recall_ci": [
+          0.9630066466416288,
+          0.9999999999999999
+        ],
+        "fixed_60s_captures": 100,
+        "fixed_60s_recall": 1.0,
+        "fixed_30s_captures": 100,
+        "fixed_30s_recall": 1.0,
+        "signal_only_captures": 82,
+        "signal_only_recall": 0.82,
+        "full_10s_captures": 100,
+        "full_10s_recall": 1.0,
+        "mean_latency_ms": 6.054
+      },
+      "900": {
+        "trials": 100,
+        "flashwindow_captures": 100,
+        "flashwindow_recall": 1.0,
+        "flashwindow_recall_ci": [
+          0.9630066466416288,
+          0.9999999999999999
+        ],
+        "fixed_60s_captures": 100,
+        "fixed_60s_recall": 1.0,
+        "fixed_30s_captures": 100,
+        "fixed_30s_recall": 1.0,
+        "signal_only_captures": 82,
+        "signal_only_recall": 0.82,
+        "full_10s_captures": 100,
+        "full_10s_recall": 1.0,
+        "mean_latency_ms": 8.306
+      }
+    }
+  },
+  "controlled_benign_controls": {
+    "total_benign_trials": 2000,
+    "false_positives": 7,
+    "true_negatives": 1993,
+    "false_positive_rate": 0.0035,
+    "false_positive_rate_ci": [
+      0.0016964340924555759,
+      0.007207186132652739
+    ]
+  },
+  "dedicated_split_view": {
+    "total_campaigns": 100,
+    "round_1_detections": 92,
+    "round_1_recall": 0.92,
+    "round_1_recall_ci": [
+      0.8500190990956066,
+      0.9589064840833618
+    ],
+    "round_2_two_epoch_detections": 99,
+    "round_2_two_epoch_recall": 0.99,
+    "round_2_two_epoch_recall_ci": [
+      0.9455139508067326,
+      0.9982325629020635
+    ],
+    "mean_arbitration_latency_sec": 1.499
+  },
+  "ablation_experiments": {
+    "total_ablation_trials": 600,
+    "total_configurations": 6,
+    "configurations": {
+      "Full System (FLASHWINDOW)": {
+        "trials": 100,
+        "attack_trials": 80,
+        "control_trials": 20,
+        "tp": 80,
+        "fp": 0,
+        "tn": 20,
+        "fn": 0,
+        "mean_recall": 1.0,
+        "recall_ci": [
+          0.9542,
+          1.0
+        ],
+        "mean_fpr": 0.0,
+        "fpr_ci": [
+          0.0,
+          0.1611
+        ],
+        "mean_split_view_recall": 1.0,
+        "mean_latency_ms": 0.01,
+        "bandwidth_kb_day": 2047.5
+      },
+      "No Lightweight Prober (Periodic 5m Polling)": {
+        "trials": 100,
+        "attack_trials": 80,
+        "control_trials": 20,
+        "tp": 32,
+        "fp": 0,
+        "tn": 20,
+        "fn": 48,
+        "mean_recall": 0.4,
+        "recall_ci": [
+          0.2996,
+          0.5095
+        ],
+        "mean_fpr": 0.0,
+        "fpr_ci": [
+          0.0,
+          0.1611
+        ],
+        "mean_split_view_recall": 0.0,
+        "mean_latency_ms": 0.004,
+        "bandwidth_kb_day": 1089.0
+      },
+      "No Multi-Vantage Verification": {
+        "trials": 100,
+        "attack_trials": 80,
+        "control_trials": 20,
+        "tp": 67,
+        "fp": 0,
+        "tn": 20,
+        "fn": 13,
+        "mean_recall": 0.8375,
+        "recall_ci": [
+          0.7416,
+          0.9025
+        ],
+        "mean_fpr": 0.0,
+        "fpr_ci": [
+          0.0,
+          0.1611
+        ],
+        "mean_split_view_recall": 0.0,
+        "mean_latency_ms": 0.016,
+        "bandwidth_kb_day": 1787.9
+      },
+      "No Deterministic Invariants": {
+        "trials": 100,
+        "attack_trials": 80,
+        "control_trials": 20,
+        "tp": 32,
+        "fp": 0,
+        "tn": 20,
+        "fn": 48,
+        "mean_recall": 0.4,
+        "recall_ci": [
+          0.2996,
+          0.5095
+        ],
+        "mean_fpr": 0.0,
+        "fpr_ci": [
+          0.0,
+          0.1611
+        ],
+        "mean_split_view_recall": 1.0,
+        "mean_latency_ms": 0.007,
+        "bandwidth_kb_day": 1089.0
+      },
+      "No Adaptive Scheduling (Static 60s Polling)": {
+        "trials": 100,
+        "attack_trials": 80,
+        "control_trials": 20,
+        "tp": 72,
+        "fp": 0,
+        "tn": 20,
+        "fn": 8,
+        "mean_recall": 0.9,
+        "recall_ci": [
+          0.8149,
+          0.9485
+        ],
+        "mean_fpr": 0.0,
+        "fpr_ci": [
+          0.0,
+          0.1611
+        ],
+        "mean_split_view_recall": 1.0,
+        "mean_latency_ms": 0.016,
+        "bandwidth_kb_day": 1887.8
+      },
+      "No Bounded AI Assistance": {
+        "trials": 100,
+        "attack_trials": 80,
+        "control_trials": 20,
+        "tp": 80,
+        "fp": 0,
+        "tn": 20,
+        "fn": 0,
+        "mean_recall": 1.0,
+        "recall_ci": [
+          0.9542,
+          1.0
+        ],
+        "mean_fpr": 0.0,
+        "fpr_ci": [
+          0.0,
+          0.1611
+        ],
+        "mean_split_view_recall": 1.0,
+        "mean_latency_ms": 0.018,
+        "bandwidth_kb_day": 2047.5
+      }
+    }
+  },
+  "proxy_benchmarks": {
+    "total_trials": 1375,
+    "total_tp": 834,
+    "total_tn": 541,
+    "total_fp": 0,
+    "total_fn": 0,
+    "aggregate_recall": 1.0,
+    "aggregate_recall_ci": [
+      0.9954,
+      1.0
+    ],
+    "aggregate_fpr": 0.0,
+    "aggregate_fpr_ci": [
+      0.0,
+      0.0071
+    ],
+    "aggregate_precision": 1.0,
+    "aggregate_f1": 1.0,
+    "persisted_witness_receipts": 815,
+    "cryptographically_verified_witness_receipts": 815,
+    "suites": [
+      {
+        "name": "Suite 1: Supply Chain Risk Graph",
+        "trials": 274,
+        "tp": 220,
+        "fp": 0,
+        "tn": 54,
+        "fn": 0,
+        "recall": 1.0,
+        "recall_ci": [
+          0.9828385523848673,
+          1.0
+        ],
+        "fpr": 0.0,
+        "fpr_ci": [
+          6.938893903907228e-18,
+          0.06641333599182633
+        ],
+        "f1": 1.0
+      },
+      {
+        "name": "Suite 2: Fast-Flux DNS Telemetry",
+        "trials": 100,
+        "tp": 30,
+        "fp": 0,
+        "tn": 70,
+        "fn": 0,
+        "recall": 1.0,
+        "recall_ci": [
+          0.8864870159728182,
+          1.0
+        ],
+        "fpr": 0.0,
+        "fpr_ci": [
+          0.0,
+          0.05202286189223294
+        ],
+        "f1": 1.0
+      },
+      {
+        "name": "Suite 3: OSS Vulnerabilities & CWE-494 Update Flaws (Proxy Invariant Test)",
+        "trials": 300,
+        "tp": 83,
+        "fp": 0,
+        "tn": 217,
+        "fn": 0,
+        "recall": 1.0,
+        "recall_ci": [
+          0.9557648622595759,
+          1.0
+        ],
+        "fpr": 0.0,
+        "fpr_ci": [
+          0.0,
+          0.017394575700600063
+        ],
+        "f1": 1.0
+      },
+      {
+        "name": "Suite 4: Real LOTL APT Payloads (Proxy Invariant Test)",
+        "trials": 701,
+        "tp": 501,
+        "fp": 0,
+        "tn": 200,
+        "fn": 0,
+        "recall": 1.0,
+        "recall_ci": [
+          0.9923907926868317,
+          0.9999999999999999
+        ],
+        "fpr": 0.0,
+        "fpr_ci": [
+          0.0,
+          0.018845251197524133
+        ],
+        "f1": 1.0
+      }
+    ]
+  }
+}
