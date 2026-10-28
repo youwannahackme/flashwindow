@@ -7,6 +7,14 @@ This repository contains the complete experimental harness, reference prototype,
 
 ---
 
+- **GitHub Repository**: [https://github.com/youwannahackme/flashwindow](https://github.com/youwannahackme/flashwindow)
+- **Pre-Packaged Release Archive**: [FLASHWINDOW_RESEARCH_REPRODUCIBILITY_PACKAGE.zip (v1.0.0)](https://github.com/youwannahackme/flashwindow/releases/download/v1.0.0/FLASHWINDOW_RESEARCH_REPRODUCIBILITY_PACKAGE.zip) (SHA-256: 8550a8061316e51a4ab7266735b088db9a3e05d29d69e43e9ff08cb7d8975373)
+- **Clone Codebase**:
+  ```bash
+  git clone https://github.com/youwannahackme/flashwindow.git
+  cd flashwindow
+  ```
+
 ## 1. Directory Structure
 
 ```

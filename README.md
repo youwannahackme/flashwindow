@@ -1,13 +1,19 @@
 # FLASHWINDOW Research Artifact Repository
 **Temporal Evidence Reconstruction and Adaptive Witnessing for Ephemeral Software-Update Tampering**
 
-*Authors: Shoaib Arshad\*, Saba Firdous, Zunair-Ul-Abiden*  
+*Authors: Shoaib Arshad\*, Saba Firdous, Zunair-Ul-Abiden, Talha Ahsan*  
 *Department of Computing, Riphah International University, Faisalabad, Pakistan*  
 *Target Venue: ACM Transactions on Privacy and Security (ACM TOPS)*
 
 [![ACM Master Checklist](https://img.shields.io/badge/ACM%20TOPS%20Checklist-100%25%20PASS%20(35%2F35)-success)](#acm-compliance-verification)
 [![Unit Tests](https://img.shields.io/badge/Unit%20Tests-10%2F10%20PASS-success)](#unit-testing)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/youwannahackme/flashwindow)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+
+- **Repository:** [https://github.com/youwannahackme/flashwindow](https://github.com/youwannahackme/flashwindow)
+- **Official Release (v1.0.0):** [v1.0.0 Release Page](https://github.com/youwannahackme/flashwindow/releases/tag/v1.0.0)
+- **Direct Artifact Download:** [FLASHWINDOW_RESEARCH_REPRODUCIBILITY_PACKAGE.zip (44.3 MB)](https://github.com/youwannahackme/flashwindow/releases/download/v1.0.0/FLASHWINDOW_RESEARCH_REPRODUCIBILITY_PACKAGE.zip)
+- **Clone:** `git clone https://github.com/youwannahackme/flashwindow.git`
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](requirements.txt)
 
 ---
@@ -39,7 +45,13 @@ FLASH_WINDOW/
 │
 ├── FLASHWINDOW_ACM_TOPS_Revised.docx          # Primary Revised ACM Word Manuscript
 ├── FLASHWINDOW_ACM_TOPS_Revised.pdf           # Primary Revised ACM PDF Manuscript
+├── FlashWindow_ACM_TOPS_Submission.docx       # Synchronized ACM Word Submission
+├── FlashWindow_ACM_TOPS_Submission.pdf        # Synchronized ACM PDF Submission
 ├── FlashWindow_Research_Paper.md              # Synchronized Markdown Manuscript
+│
+├── build_flashwindow_docx.py                  # End-to-end manuscript compiler and PDF exporter
+├── verify_flashwindow_checklist.py            # Automated ACM TOPS 35-rule verification suite
+├── generate_flashwindow_figures.py            # High-resolution figure generator
 │
 ├── reports/                                   # Formal ACM TOPS Audit Reports (Phases 1-15)
 │   ├── initial_audit.md                       # Phase 1: Manuscript Discovery & Defect Audit
@@ -156,6 +168,25 @@ python experiments/verify_analytical_math.py
 python experiments/reproduce_all_metrics.py
 ```
 
+### 3.4 Compile Manuscript and Export PDF
+```bash
+# Compiles FLASHWINDOW_ACM_TOPS_Revised.docx and exports FLASHWINDOW_ACM_TOPS_Revised.pdf
+python build_flashwindow_docx.py
+```
+
+### 3.5 Run the 35-Rule ACM Master Verification Checklist
+```bash
+python verify_flashwindow_checklist.py FLASHWINDOW_ACM_TOPS_Revised.docx
+```
+*Expected Output:*
+```
+=================================================================
+  FINAL STATUS: ALL REQUIREMENTS MET (100% ACM COMPLIANT)
+=================================================================
+```
+
+---
+
 ## 4. Summary of Validated Empirical Findings
 
 | Evaluation Dimension | Stated Claim in Paper | Empirical Evidence Source | Verified Confidence Bound (95% Wilson Score CI) |
@@ -180,6 +211,7 @@ python experiments/reproduce_all_metrics.py
   title     = {FLASHWINDOW: Temporal Evidence Reconstruction and Adaptive Witnessing for Ephemeral Software-Update Tampering},
   journal   = {ACM Transactions on Privacy and Security},
   year      = {2026},
+  url       = {https://github.com/youwannahackme/flashwindow},
   publisher = {Association for Computing Machinery},
   address   = {New York, NY, USA}
 }
