@@ -1,20 +1,24 @@
-# gitignore file for a SolidWorks project
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
 
-# SolidWorks temporary files
-~$*.sldprt
-~$*.sldasm
-~$*.slddrw
-~$*.sld
-
-# For systems with case-sensitive (SolidWorks uses both)
-~$*.SLDPRT
-~$*.SLDASM
-~$*.SLDDRW
-~$*.SLD
-
-# SolidWorks backups and auto-recovery
+# Scratch & Temporary development folders
+scratch/
+backups/
+_audit_work/
+reports/
+docs/
+*.tmp
+*.log
 *.bak
-*.swbak
 
-# Cache of simulation results
-/simulation_results/
+# Large packaged release archive (attach to GitHub Releases instead)
+*.zip
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
