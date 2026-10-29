@@ -8,13 +8,14 @@
 [![ACM Master Checklist](https://img.shields.io/badge/ACM%20TOPS%20Checklist-100%25%20PASS%20(35%2F35)-success)](#acm-compliance-verification)
 [![Unit Tests](https://img.shields.io/badge/Unit%20Tests-10%2F10%20PASS-success)](#unit-testing)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/youwannahackme/flashwindow)
+[![Release](https://img.shields.io/badge/Release-v1.0.0-blue.svg)](https://github.com/youwannahackme/flashwindow/releases/tag/v1.0.0)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](requirements.txt)
 
 - **Repository:** [https://github.com/youwannahackme/flashwindow](https://github.com/youwannahackme/flashwindow)
 - **Official Release (v1.0.0):** [v1.0.0 Release Page](https://github.com/youwannahackme/flashwindow/releases/tag/v1.0.0)
 - **Direct Artifact Download:** [FLASHWINDOW_RESEARCH_REPRODUCIBILITY_PACKAGE.zip (44.3 MB)](https://github.com/youwannahackme/flashwindow/releases/download/v1.0.0/FLASHWINDOW_RESEARCH_REPRODUCIBILITY_PACKAGE.zip)
 - **Clone:** `git clone https://github.com/youwannahackme/flashwindow.git`
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](requirements.txt)
 
 ---
 
@@ -37,47 +38,28 @@ FLASHWINDOW addresses this vulnerability without requiring modifications to lega
 ## 2. Repository Structure
 
 ```
-FLASH_WINDOW/
-├── README.md                                  # Master reproducibility guide (this file)
-├── LICENSE                                    # Apache 2.0 Open Source License
-├── CITATION.cff                               # Citation metadata format
-├── requirements.txt                           # Python environment dependencies
+flashwindow/
+├── LICENSE                                    # Apache 2.0 open-source license
+├── README.md                                  # Repository overview and reproduction guide
+├── README_REPRODUCIBILITY.md                  # Detailed artifact execution instructions
+├── requirements.txt                           # Python dependencies
+├── CITATION.cff                               # Machine-readable citation metadata
 │
 ├── FLASHWINDOW_ACM_TOPS_Revised.docx          # Primary Revised ACM Word Manuscript
 ├── FLASHWINDOW_ACM_TOPS_Revised.pdf           # Primary Revised ACM PDF Manuscript
 ├── FlashWindow_ACM_TOPS_Submission.docx       # Synchronized ACM Word Submission
 ├── FlashWindow_ACM_TOPS_Submission.pdf        # Synchronized ACM PDF Submission
 ├── FlashWindow_Research_Paper.md              # Synchronized Markdown Manuscript
-│
-├── build_flashwindow_docx.py                  # End-to-end manuscript compiler and PDF exporter
-├── verify_flashwindow_checklist.py            # Automated ACM TOPS 35-rule verification suite
-├── generate_flashwindow_figures.py            # High-resolution figure generator
-│
-├── reports/                                   # Formal ACM TOPS Audit Reports (Phases 1-15)
-│   ├── initial_audit.md                       # Phase 1: Manuscript Discovery & Defect Audit
-│   ├── claim_evidence_matrix.csv              # Phase 2: Claim-to-Evidence Matrix (Categories A-F)
-│   ├── novelty_audit.md                       # Phase 3: Intellectual Novelty & Related Work Audit
-│   ├── reference_verification.csv             # Phase 3: All 85 Authentic Citations Audited
-│   ├── related_work_matrix.csv                # Phase 3: Comparative SOTA Capability Matrix
-│   ├── threat_model_review.md                 # Phase 4: Adversary Models & Security Properties
-│   ├── mathematical_audit.md                  # Phase 5: Equation Validation & Proposition Proofs
-│   ├── dataset_audit.csv                      # Phase 7: Dataset Provenance, URLs & Labels
-│   ├── final_review.md                        # Phase 15: Project Internal Quality Audit Memo
-│   ├── CHANGELOG.md                           # Master Technical & Structural Change Log
-│   └── unresolved_issues.md                   # Researcher Actions Prior to Journal Submission
+├── FLASHWINDOW_EVIDENCE_RECORD.md             # Grounded cryptographic evidence record
+├── FLASHWINDOW_RESEARCH_AUDIT_ANSWERS.md      # Formal ACM reviewer responses
 │
 ├── benchmark_prototype/                       # Reference Prototype Implementation
 │   ├── flashwindow_engine.py                  # Core 4-Layer Python Reference Engine
-│   ├── evaluate_real_datasets.py              # Kaggle 1,375-trial benchmark harness
+│   ├── evaluate_real_datasets.py              # 1,375-trial benchmark harness
 │   ├── real_benchmark_results.json            # Machine-readable trial results log
 │   ├── REAL_BENCHMARK_REPORT.md               # Empirical evaluation report
-│   └── datasets/                              # Curated Kaggle security corpora
-│       ├── README.md                          # Dataset provenance, URLs & labeling
-│       ├── checksums.txt                      # Cryptographic SHA-256 hashes
-│       ├── supply_chain_risk_graph/           # Suite 1: Package risk snapshots (274 packages)
-│       ├── fastflux_dns_telemetry/            # Suite 2: Fast-flux DiG traces (100 trials)
-│       ├── oss_vulnerabilities_cve/           # Suite 3: CVE vulnerability records (300 trials)
-│       └── lotl_apt_payloads/                 # Suite 4: Real LOTL APT commands (701 trials)
+│   └── datasets/                              # Evaluation Datasets (154 MB)
+│       └── README.md                          # Provenance & Download pointer (Release v1.0.0)
 │
 ├── tests/                                     # Automated Unit & Integration Tests
 │   └── test_flashwindow_engine.py             # 10/10 automated unit tests (JCS, Invariants, Ledger)
@@ -98,19 +80,21 @@ FLASH_WINDOW/
 │   │   ├── ablation_trials.jsonl              # 600 ablation trial records
 │   │   ├── real_benchmark_eval.jsonl          # 1,375 curated proxy invariant records
 │   │   └── witness_receipts.jsonl             # 815 persisted local HMAC witness receipts
-│   ├── processed/                             # Derived statistical tables
-│   │   ├── controlled_summary.json            # Per-dwell breakdown and split-view metrics
-│   │   ├── benchmark_summary.json             # Proxy benchmark metrics with Wilson 95% CIs
-│   │   ├── ablation_summary.json              # Ablation trade-offs (recall, FPR, latency)
-│   │   ├── validated_manuscript_metrics.json  # Canonical master reconciled metrics JSON
-│   │   └── metrics_reconciliation.csv         # Reconciled metrics comparison table
-│   └── figures/                               # Processed publication figures (Fig 1-9)
+│   └── processed/                             # Derived statistical tables
+│       ├── controlled_summary.json            # Per-dwell breakdown and split-view metrics
+│       ├── benchmark_summary.json             # Proxy benchmark metrics with Wilson 95% CIs
+│       ├── ablation_summary.json              # Ablation trade-offs (recall, FPR, latency)
+│       ├── validated_manuscript_metrics.json  # Canonical master reconciled metrics JSON
+│       └── metrics_reconciliation.csv         # Reconciled metrics comparison table
 │
 └── figures/                                   # Publication Figures Directory
-    ├── cropped_png/                           # 300 DPI tightly cropped PNGs
-    ├── png/                                   # High-resolution raw PNGs
-    └── svg/                                   # Scalable Vector Graphics sources
+    ├── cropped_png/                           # 300 DPI tightly cropped publication figures (Fig 1-9)
+    └── svg/                                   # Vector master figures (Fig 1-9)
 ```
+
+> **Note on Datasets and Reproducibility Distribution:**
+> * **Datasets (154 MB):** The raw CSV trace files exceed the GitHub 25 MB web upload limit and are distributed in the pre-packaged archive under [Release v1.0.0](https://github.com/youwannahackme/flashwindow/releases/tag/v1.0.0).
+> * **Standalone Archive:** The complete self-contained package containing all 78 dataset traces, verification tools, and scripts is available directly from the release page: [FLASHWINDOW_RESEARCH_REPRODUCIBILITY_PACKAGE.zip](https://github.com/youwannahackme/flashwindow/releases/download/v1.0.0/FLASHWINDOW_RESEARCH_REPRODUCIBILITY_PACKAGE.zip) (SHA-256: `fed0a96844561924fdee4396b126b6258c8cdb2b535f2a681d3a160fb24a24ee`).
 
 ---
 
@@ -118,8 +102,9 @@ FLASH_WINDOW/
 
 ### 3.1 Environment Setup
 ```bash
-# Note: For artifact review, all code, datasets, and scripts are self-contained in this archive.
-# The public repository (https://github.com/flashwindow-core/flashwindow) is scheduled for activation upon publication.
+# Clone the repository
+git clone https://github.com/youwannahackme/flashwindow.git
+cd flashwindow
 
 # Create and activate virtual environment
 python -m venv venv
@@ -168,22 +153,16 @@ python experiments/verify_analytical_math.py
 python experiments/reproduce_all_metrics.py
 ```
 
-### 3.4 Compile Manuscript and Export PDF
-```bash
-# Compiles FLASHWINDOW_ACM_TOPS_Revised.docx and exports FLASHWINDOW_ACM_TOPS_Revised.pdf
-python build_flashwindow_docx.py
-```
-
-### 3.5 Run the 35-Rule ACM Master Verification Checklist
-```bash
-python verify_flashwindow_checklist.py FLASHWINDOW_ACM_TOPS_Revised.docx
-```
-*Expected Output:*
-```
-=================================================================
-  FINAL STATUS: ALL REQUIREMENTS MET (100% ACM COMPLIANT)
-=================================================================
-```
+### 3.4 Download Complete Standalone Artifact Package
+For independent evaluation with pre-cached datasets (154 MB uncompressed):
+1. Download [FLASHWINDOW_RESEARCH_REPRODUCIBILITY_PACKAGE.zip](https://github.com/youwannahackme/flashwindow/releases/download/v1.0.0/FLASHWINDOW_RESEARCH_REPRODUCIBILITY_PACKAGE.zip) from Release v1.0.0.
+2. Unpack into an isolated directory:
+   ```bash
+   unzip FLASHWINDOW_RESEARCH_REPRODUCIBILITY_PACKAGE.zip -d flashwindow_eval
+   cd flashwindow_eval
+   pytest -q tests/test_flashwindow_engine.py
+   python experiments/reproduce_all_metrics.py
+   ```
 
 ---
 
