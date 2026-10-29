@@ -47,8 +47,6 @@ flashwindow/
 │
 ├── FLASHWINDOW_ACM_TOPS_Revised.docx          # Primary Revised ACM Word Manuscript
 ├── FLASHWINDOW_ACM_TOPS_Revised.pdf           # Primary Revised ACM PDF Manuscript
-├── FlashWindow_ACM_TOPS_Submission.docx       # Synchronized ACM Word Submission
-├── FlashWindow_ACM_TOPS_Submission.pdf        # Synchronized ACM PDF Submission
 ├── FlashWindow_Research_Paper.md              # Synchronized Markdown Manuscript
 ├── FLASHWINDOW_EVIDENCE_RECORD.md             # Grounded cryptographic evidence record
 ├── FLASHWINDOW_RESEARCH_AUDIT_ANSWERS.md      # Formal ACM reviewer responses
